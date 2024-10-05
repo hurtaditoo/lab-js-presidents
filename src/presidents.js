@@ -455,7 +455,7 @@ function getAgeAtInauguration(presidentsArr) {
   return presidentsArr.map((president) => {
     const ageAtInauguration =  president.tookOffice - president.birthYear; 
     return {
-      ...president,
+      ...president, // Se hace para copiar las propiedades ya existentes y no modificarlas
       ageAtInauguration
     };
   });
