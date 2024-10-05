@@ -425,10 +425,13 @@ function getNames(presidentsArr) {
 
 console.log( getNames(presidents) );
 
+
 // Iteration 2 | Democratic Presidents - `filter()`
-function getDemocraticPresidents(presidentsArr) {}
+function getDemocraticPresidents(presidentsArr) {
+  return presidentsArr.filter(democratic => democratic.party === 'Democratic');
+}
 
-
+console.log( getDemocraticPresidents(presidents) );
 
 
 // Iteration 3 | Count Years in Office - reduce()
