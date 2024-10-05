@@ -447,9 +447,11 @@ console.log( countYearsInOffice(presidents) );
 
 
 // Iteration 4 | Sort Presidents by Birth Year - `sort()`
-function sortPresidentsByBirthYear(presidentsArr) {}
+function sortPresidentsByBirthYear(presidentsArr) {
+  return presidentsArr.sort((presidentbefore, presidentNext) => presidentbefore.birthYear - presidentNext.birthYear);
+}
 
-
+console.log( sortPresidentsByBirthYear(presidents) );
 
 
 // Bonus: Iteration 5 | Age at Inauguration - `map()`
